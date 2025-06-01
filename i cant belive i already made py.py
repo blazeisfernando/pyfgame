@@ -24,7 +24,7 @@ player = pygame.Rect((250, 250, 50, 50))
 ground = pygame.Rect((150, 300, 300, 50))
 #jumpy stuff
 velocity_y = 0         # How fast the player is falling
-gravity = 0.1          # Gravity strength
+gravity = 0.2          # Gravity strength
 jump_strength = -4
 is_jumping = False     # True when in the air
 
@@ -58,7 +58,7 @@ while run == True:
     elif key[pygame.K_w] == True:
         player.move_ip(0, -10)
     elif key[pygame.K_SPACE] == True:
-        player.move_ip(0, -1)
+        player.move_ip(0, -2)
     elif key[pygame.K_s] == True:
         player.move_ip(0, 10)
 
