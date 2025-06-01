@@ -56,9 +56,9 @@ while run == True:
     elif key[pygame.K_d] == True:
         player.move_ip(10, 0)
     elif key[pygame.K_w] == True:
-        player.move_ip(0, -10)
-    elif key[pygame.K_SPACE] == True:
-        player.move_ip(0, -2)
+        player.move_ip(0, -1)
+    #elif key[pygame.K_SPACE] == True:
+        #player.move_ip(0, -2)
     elif key[pygame.K_s] == True:
         player.move_ip(0, 10)
 
@@ -69,6 +69,8 @@ while run == True:
 
     velocity_y += gravity
     player.y += velocity_y
+
+    
 
     if player.colliderect(ground):
         player.bottom = ground.top  # Snap to ground
@@ -87,6 +89,11 @@ while run == True:
         if event.type == pygame.QUIT:
             run = False
 
+
+
+        
+
+
     pygame.display.update()
 
 
@@ -95,4 +102,4 @@ pygame.quit()
 
 
 
-#pygame.display.set_mode()
+#pygame.display.set_mode()    
