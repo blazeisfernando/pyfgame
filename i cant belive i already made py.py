@@ -30,7 +30,7 @@ while run == True:
 
 
 
-    screen.fill((0, 0, 0))
+    screen.fill((135, 206, 235))
     pygame.draw.rect(screen,(0, 128, 0), ground)
     pygame.draw.rect(screen,(255, 0, 0), player)
     key = pygame.key.get_pressed()
