@@ -39,8 +39,8 @@ while run == True:
         player.move_ip(-1, 0)
     elif key[pygame.K_d] == True:
         player.move_ip(1, 0)
-    #elif key[pygame.K_w] == True:
-        #player.move_ip(0, -1)
+    elif key[pygame.K_w] == True:
+        player.move_ip(0, -1)
     elif key[pygame.K_SPACE] == True:
         player.move_ip(0, -1)
     elif key[pygame.K_s] == True:
