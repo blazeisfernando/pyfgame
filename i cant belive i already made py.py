@@ -25,7 +25,7 @@ ground = pygame.Rect((150, 300, 300, 50))
 #jumpy stuff
 velocity_y = 0         # How fast the player is falling
 gravity = 0.2          # Gravity strength
-jump_strength = -4
+jump_strength = -8
 is_jumping = False     # True when in the air
 
 
