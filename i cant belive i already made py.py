@@ -1,5 +1,5 @@
 #wow look at this
-import pygame # type: ignore
+import pygame 
 import os
 
 pygame.init()
@@ -22,6 +22,8 @@ screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 #THE HIGHER THE LOWER!!!!!!!!
 player = pygame.Rect((250, 250, 50, 50))
 ground = pygame.Rect((150, 300, 300, 50))
+ground_copy = ground.copy()
+ground_copy.x += 350
 #jumpy stuff
 velocity_y = 0         # How fast the player is falling
 gravity = 0.2          # Gravity strength
@@ -83,6 +85,7 @@ while run == True:
     screen.fill((135, 206, 235))
     pygame.draw.rect(screen,(0, 128, 0), ground)
     pygame.draw.rect(screen,(255, 0, 0), player)
+    pygame.draw.rect(screen, (0, 200, 0), ground_copy)
 
     #event handler
     for event in pygame.event.get():
