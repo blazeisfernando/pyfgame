@@ -1,5 +1,5 @@
 #wow look at this
-import pygame
+import pygame # type: ignore
 import os
 
 pygame.init()
